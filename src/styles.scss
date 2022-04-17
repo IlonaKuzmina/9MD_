@@ -1,3 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+@import 'components/resets.scss';
+@import 'components/grids.scss';
+@import 'components/colors_variables.scss';
+@import 'components/toast.scss';
+@import 'components/globally.scss';
+
+
 body {
   background-color: antiquewhite;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1920px;
+  width:100%;
+  margin: 0 auto;
+  padding: 60px 105px;
+  background-color:  #FFFFFF;
+}
+
+button {
+  padding: 14px 28px;
+  border-radius: 80px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 74px;
+}
+
+h2 {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 180%;
+}
+
+h3 {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+}
+h4 {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 180%;
+}
+
+h5 {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 180%;
+}
+
+p {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  text-align: center;
+}
+
+.colored {
+  background-color: var(--main-yellow-color);
+}
+
+.colored--two {
+  background-color: var(--main-yellow-color);
+  border-radius: 20px;
+}
+
+.colored--three {
+background-color: var(--main-brown-color);
+}
+
+.header__phone {
+display: flex;
+background-color: var(--main-brown-color);
+border-radius: 80px;
+width: 334px;
+height:80px;
+color:white;
+padding: 14px 28px;
+}
+
+.tour__image {
+  border-radius: 20px;
+}
+
+.pseido__video {
+  width:705;
+  height: 470px;
+  background-color: var(--main-brown-color);
+  border-radius:20px;
+}
+
+.video__video--box, .video__content--box {
+
+  margin: 40px;
+}
+
+.team__small__box {
+  display:flex;
+  flex-direction: row;
+  align-items: top;
+}
+
+.team__small__box--icon {
+  background: #FBFBFB;
+  box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12);
+  border-radius: 50%;
+  display: inline-block;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
 }

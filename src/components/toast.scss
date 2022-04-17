@@ -1,0 +1,49 @@
+.toast {
+    position: absolute;
+    top:10px;
+    right:10px;
+    inset: 0;
+    border: 1px solid #F1F1F1;
+    border-radius: 4px;
+    color:white;
+    margin:10px 20px;
+    background-color: var(--main-brown-color);
+    padding: 16px 24px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    max-width: 574px;
+    min-height: 60px;
+    place-items: center;
+    visibility: hidden;
+    opacity:0;
+    transition: .4s;
+    z-index: 1; 
+}
+
+.active-more {
+    opacity: 1;
+    visibility: visible;
+}
+
+.toast__text {
+display:inline-block;
+padding-right: 100px;
+}
+
+.toast__close {
+position:absolute;
+top:15px;
+right:15px;
+cursor: pointer;
+&:hover {
+color: var(--main-yellow-color);
+}
+}   
+
+.toast__close svg {
+fill:currentColor;
+}
+
