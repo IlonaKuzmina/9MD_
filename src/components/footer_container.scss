@@ -65,3 +65,18 @@ color: white;
     max-width: 400px;
     color:black;
 }
+
+.email-list li {
+    color:white;
+    list-style-type: none;
+}
+
+.email-list {
+    color:white;
+}
+
+.list__container {
+    display:flex;
+    justify-content: center;
+    text-align:start;
+}

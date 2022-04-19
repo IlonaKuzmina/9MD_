@@ -55,6 +55,17 @@ toast.addEventListener('click', () => {
   showToast();
 }
 */
+const footerButton = document.querySelector<HTMLButtonElement>('.js-button-text');
+const footerInputEmail = document.querySelector<HTMLInputElement>('.js-input-text');
+const emailUlElement = document.querySelector('.js-email-list');
+
+footerButton.addEventListener('click', () => {
+  const inputValue = footerInputEmail.value;
+  const newLiElement = document.createElement('li');
+  newLiElement.innerHTML = inputValue;
+
+  emailUlElement.appendChild(newLiElement);
+});
 
 /// TOAST OPEN & CLOSE ///
 

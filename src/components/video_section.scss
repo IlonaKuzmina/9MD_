@@ -1,8 +1,9 @@
 .pseido__video {
-    width:705;
     height: 470px;
     background-color: var(--main-brown-color);
     border-radius:20px;
+    background-image: url('../assets/images/Your-Video-Here-images.jpg');
+    background-size: contain;
   }
   
   .video__video--box, .video__content--box {
