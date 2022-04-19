@@ -1,33 +1,115 @@
-// console.log('Ready for coding');
-// const toast = document.querySelector<HTMLDivElement>('.toast');
-// const showToast = document.querySelector<HTMLDivElement>('.show-toast');
+///  FOOTER INPUT EMAIL ///
+/* const footerButton = document.querySelector<HTMLButtonElement>('.js-footer-button');
+const footerInputEmail = document.querySelector<HTMLInputElement>('.js-input-text');
 
-// showToast.addEventListener('click', () => {
-//    toast.classList.add('toast-active')})
+const validation = () => {
 
-///  INPUT ////   BUTTON
+} 
+document.querySelector('.js-footer-button').onclick = function
+() {
+  if (document.querySelector('.js-input-text').value.length == 0) {
+    alert('Pleas enter the e-mail');
+  } else {
+    document.querySelector('.emails').innerHTML
+    += `
+    <div class="email"> 
+    <span class="email-name"> 
+    ${document.querySelector('.js-input-text').value}
+    </span>
+    </div>
+    <button class="delete"> D </button>
+    `;
+  }
+};
 
-// const inputText = document.querySelector<HTMLInputElement>('.js-input-text');
+const footerButton = document.querySelector<HTMLButtonElement>('.js-footer-button');
+const footerInputEmail = document.querySelector<HTMLInputElement>('.js-input-text');
+const newEnteredEmail = document.querySelector<HTMLDivElement('.js-emails');
 
-// close toster ///
-const moreViews = document.querySelector<HTMLDivElement>('.toast');
-const moreBtns = document.querySelector<HTMLButtonElement>('.hero__button--watch');
-const moreClose = document.querySelector('.toast__close');
+const validation = () => {
+  if (footerInputEmail.value.length == 0) {
+    alert('Please enter the e-mail');
+  } else {
+    newEnteredEmail.innerHTML += `
+  <div class="email"> 
+  <span class="email-name"> 
+  ${footerInputEmail.value}
+  </span>
+  </div>
+  <button class="delete"> D </button>
+`;
+  }
+  footerButton.addEventListener('click', () => {
+    validation();
+};
 
-// const more = function (moreClick) {
-//   moreViews[moreClick].classList.add('active-more');
-// };
+let x;
+let toast = document.querySelector('.toast');
+function showToast(){
+clearTimeout(x);
+toast.style.transform = "translateX(0)";
+x = setTimeout(() => {
+  toast.style.transform = "translateX(490px)";
+}, 4000);
+toast.addEventListener('click', () => {
+  showToast();
+}
+*/
 
-// moreBtns.forEach((mb, i) => {
-//   mb.addEventListener('click', () => {
-//     more(i);
-//   });
-// });
+/// TOAST OPEN & CLOSE ///
 
-// moreClose.forEach((mc) => {
-//   mc.addEventListener('click', () => {
-//     moreViews.forEach((mv) => {
-//       mv.classList.remove('active-more');
-//     });
-//   });
-// });
+const toast = document.querySelector<HTMLDivElement>('.js-toast');
+const openToast = document.querySelector<HTMLButtonElement>('.js-open-toast');
+const closeToast = document.querySelector('.js-close-toast');
+
+openToast.addEventListener('click', () => {
+  toast.style.visibility = 'visible';
+});
+
+closeToast.addEventListener('click', () => {
+  toast.style.visibility = 'hidden';
+});
+
+///  FOOTER CHANGE BACKGROUND COLOR ///
+
+const footerInput = document.querySelector<HTMLInputElement>('.js-input-text');
+const footerContainer = document.querySelector<HTMLDivElement>('.colored--three');
+
+const getNewColor = () => {
+  const colorsType = [
+    '#8B0000',
+    '#4B0082',
+    '#808000',
+    '#f4a460',
+    '#4682B4',
+  ];
+  return colorsType[Math.floor(Math.random() * colorsType.length)];
+};
+
+const setNewColor = () => {
+  const currentColor = footerContainer.style.backgroundColor;
+  let randomColor = getNewColor();
+
+  while (currentColor === randomColor) {
+    randomColor = getNewColor();
+  }
+  footerContainer.style.backgroundColor = randomColor;
+};
+
+footerInput.addEventListener('keypress', () => {
+  setNewColor();
+});
+
+const setNewColorInput = () => {
+  const currentColorInput = footerInput.style.backgroundColor;
+  let randomColor = getNewColor();
+
+  while (currentColorInput === randomColor) {
+    randomColor = getNewColor();
+  }
+  footerInput.style.backgroundColor = randomColor;
+};
+
+footerInput.addEventListener('keypress', () => {
+  setNewColorInput();
+});

@@ -1,0 +1,17 @@
+.news__beigs {
+    background-color: var(--main-yellow-color);
+    display: inline-block;
+    border-radius: 80px;
+    padding: 2px 25px;
+    margin-top: 20px;
+  }
+
+.image-box {
+    position: relative;
+    }
+    
+.news__beigs--secondary {
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}

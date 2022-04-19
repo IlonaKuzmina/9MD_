@@ -1,26 +1,29 @@
 .toast {
-    position: absolute;
-    top:10px;
-    right:10px;
-    inset: 0;
+    max-width: 474px;
+    padding: 16px 24px;
     border: 1px solid #F1F1F1;
     border-radius: 4px;
-    color:white;
-    margin:10px 20px;
+    position: fixed;
+    z-index: 2;
+    top:10px;
+    right:10px;
     background-color: var(--main-brown-color);
-    padding: 16px 24px;
-    font-family: 'Poppins',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    max-width: 574px;
-    min-height: 60px;
-    place-items: center;
+    color:white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+
     visibility: hidden;
-    opacity:0;
+
+    //transform: translate(490px);
+    //transition: 1s;
+
+    /*
+    inset: 0;
+    margin:10px 20px;
+    place-items: center;
+    
+    //opacity:0;
     transition: .4s;
-    z-index: 1; 
+     */
 }
 
 .active-more {
@@ -28,22 +31,26 @@
     visibility: visible;
 }
 
-.toast__text {
-display:inline-block;
-padding-right: 100px;
-}
-
 .toast__close {
-position:absolute;
-top:15px;
-right:15px;
-cursor: pointer;
-&:hover {
-color: var(--main-yellow-color);
+    position:absolute;
+    top:15px;
+    right:15px;
+    cursor: pointer;
+    &:hover {
+    color: var(--main-yellow-color);
 }
 }   
 
 .toast__close svg {
-fill:currentColor;
+    fill:currentColor;
 }
 
+.show__toast {
+    border: none;
+    border-radius:50%;
+text-align: center;
+cursor: pointer;
+&:hover {
+    background-color: red;
+}
+}
