@@ -94,22 +94,9 @@ const setNewColor = () => {
     randomColor = getNewColor();
   }
   footerContainer.style.backgroundColor = randomColor;
+  footerInput.style.backgroundColor = footerContainer.style.backgroundColor;
 };
 
 footerInput.addEventListener('keypress', () => {
   setNewColor();
-});
-
-const setNewColorInput = () => {
-  const currentColorInput = footerInput.style.backgroundColor;
-  let randomColor = getNewColor();
-
-  while (currentColorInput === randomColor) {
-    randomColor = getNewColor();
-  }
-  footerInput.style.backgroundColor = randomColor;
-};
-
-footerInput.addEventListener('keypress', () => {
-  setNewColorInput();
 });

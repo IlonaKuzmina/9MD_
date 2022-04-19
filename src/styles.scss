@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700&display=swap');
 @import 'components/resets.scss';
 @import 'components/grids.scss';
-@import 'components/header.scss';
-@import 'components/hero.scss';
+@import 'components/header_hero.scss';
 @import 'components/toast.scss';
+@import 'components/tour__section.scss';
 @import 'components/globally_section.scss';
+@import 'components/vide_section.scss';
+@import 'components/team_section.scss';
+@import 'components/choose_section.scss';
+@import 'components/customer_section.scss';
 @import 'components/news_section.scss';
 @import 'components/footer_container.scss';
 
@@ -72,8 +76,11 @@ p {
   font-weight: 400;
   font-size: 20px;
   line-height: 180%;
-
   margin: 20px 0;
+}
+
+.paragraph {
+  padding: 10px 0 30px 0;
 }
 
 :root {
@@ -121,40 +128,9 @@ background-color: var(--main-brown-color);
 }
 
 .pseido__button a{
-text-decoration:none;
-color:inherit;
-margin:auto 0;
-}
-
-.tour__image {
-  border-radius: 20px;
-}
-
-.pseido__video {
-  width:705;
-  height: 470px;
-  background-color: var(--main-brown-color);
-  border-radius:20px;
-}
-
-.video__video--box, .video__content--box {
-  margin: 40px;
-}
-
-.team__small__box {
-  display:flex;
-  flex-direction: row;
-  align-items: top;
-}
-
-.team__small__box--icon {
-  background: #FBFBFB;
-  box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12);
-  border-radius: 50%;
-  display: inline-block;
-  padding: 15px;
-  width: 60px;
-  height: 60px;
+  text-decoration:none;
+  color:inherit;
+  margin:auto 0;
 }
 
 
@@ -174,17 +150,6 @@ margin:auto 0;
   box-shadow: 0 0 11px #0a252a;
 }
 
-.hero__button__line {
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  column-gap: 15px;;
-}
-
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .container {
@@ -201,6 +166,9 @@ margin:auto 0;
   h3 {
     font-size: 26px;
     line-height: 180%;
+    padding-top: 25px;
+    text-align: center;
+ 
   }
   h4 {
     font-size: 22px;
@@ -220,4 +188,15 @@ margin:auto 0;
     flex-direction: column;
     row-gap: 20px;
   }
+  .hero__paragraph {
+    text-align: center;
+ 
+  }
+  .hero__button__line {
+    justify-content: space-evenly;
+    margin:45px 45px;
+  }
+  .article {
+    margin:50px 10px;
+  } 
 };

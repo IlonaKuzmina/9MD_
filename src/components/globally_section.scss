@@ -41,6 +41,17 @@
 background-color: transparent;
 border: 1px solid white;
 color: white;
+cursor: pointer;
+&:hover {
+  background: rgba(129,40,54,0.7);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.50);
+  transition: .4s;
+}
+&:active {
+  background-color: #B25A59;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.50);
+  transition: .4s;
+}
   }
 
   .overlay {

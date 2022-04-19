@@ -1,0 +1,27 @@
+.pseido__video {
+    width:705;
+    height: 470px;
+    background-color: var(--main-brown-color);
+    border-radius:20px;
+  }
+  
+  .video__video--box, .video__content--box {
+    margin: 40px;
+  }
+  
+  .video__learn--more {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    padding-bottom:20px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 180%;
+    text-decoration: underline;
+    &:hover {
+        color:var(--a-link-color);
+    }
+    &:active {
+        color: var(--main-brown-color);
+    }
+}
+

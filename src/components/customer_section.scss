@@ -1,0 +1,42 @@
+.customer__small__line {
+    width:90px;
+    display: inline-block;
+}
+.customer__heading {
+    padding: 30px 0;
+    font-size: 60px;
+line-height: 82px;
+}
+
+.customer__paragraph {
+    padding-right: 40px;
+}
+
+.testimonial {
+    line-height: 27px;
+letter-spacing: 0.2em;
+padding-left:20px;
+}
+
+.customer__image {
+    border-radius: 20px;
+    max-width:630px;
+}
+
+.button__text {
+    padding: 0 60px;
+}
+
+.arrow__svg{
+    border: 1px solid #EE5060;
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.round__button {
+    background-color: transparent;
+    border: 1px solid #EE5060;
+    color:#EE5060;
+    padding: 25px 0 25px 25px;
+    cursor: pointer;
+}
