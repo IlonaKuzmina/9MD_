@@ -1,70 +1,38 @@
-///  FOOTER INPUT EMAIL ///
-/* const footerButton = document.querySelector<HTMLButtonElement>('.js-footer-button');
-const footerInputEmail = document.querySelector<HTMLInputElement>('.js-input-text');
+///  NAV BAR ///
 
-const validation = () => {
+const navListContainer = document.querySelector<HTMLDivElement>('.js-nav-list');
 
-} 
-document.querySelector('.js-footer-button').onclick = function
-() {
-  if (document.querySelector('.js-input-text').value.length == 0) {
-    alert('Pleas enter the e-mail');
-  } else {
-    document.querySelector('.emails').innerHTML
-    += `
-    <div class="email"> 
-    <span class="email-name"> 
-    ${document.querySelector('.js-input-text').value}
-    </span>
-    </div>
-    <button class="delete"> D </button>
-    `;
-  }
+navListContainer.innerHTML = '<a class="nav__item" href="#tour">Home</a> <a class="nav__item" href="#globally">Events</a> <a class="nav__item" href="#team">About</a> <a class="nav__item" href="#choose">Blog</a> <a class="nav__item" href="#news">Contact</a>';
+
+/// TOUR PHOTO SLIDER ///
+
+let slideCurrrentSlideIndex = 0;
+const btnRight = document.querySelector<HTMLButtonElement>('.js-tour-arrow-right');
+const btnLeft = document.querySelector<HTMLButtonElement>('.js-tour-arrow-left');
+const slideElements = document.querySelectorAll('.js-slide');
+
+const slideCount = slideElements.length - 1;
+
+const toggleHiddenClasses = () => {
+  slideElements.forEach((slideElement, index) => {
+    if (slideCurrrentSlideIndex === index) {
+      slideElement.classList.remove('hidden');
+    } else {
+      slideElement.classList.add('hidden');
+    }
+  });
 };
 
-const footerButton = document.querySelector<HTMLButtonElement>('.js-footer-button');
-const footerInputEmail = document.querySelector<HTMLInputElement>('.js-input-text');
-const newEnteredEmail = document.querySelector<HTMLDivElement('.js-emails');
+btnRight.addEventListener('click', () => {
+  const isLastSlide = slideCount === slideCurrrentSlideIndex;
+  slideCurrrentSlideIndex = !isLastSlide ? slideCurrrentSlideIndex + 1 : 0;
+  toggleHiddenClasses();
+});
 
-const validation = () => {
-  if (footerInputEmail.value.length == 0) {
-    alert('Please enter the e-mail');
-  } else {
-    newEnteredEmail.innerHTML += `
-  <div class="email"> 
-  <span class="email-name"> 
-  ${footerInputEmail.value}
-  </span>
-  </div>
-  <button class="delete"> D </button>
-`;
-  }
-  footerButton.addEventListener('click', () => {
-    validation();
-};
-
-let x;
-let toast = document.querySelector('.toast');
-function showToast(){
-clearTimeout(x);
-toast.style.transform = "translateX(0)";
-x = setTimeout(() => {
-  toast.style.transform = "translateX(490px)";
-}, 4000);
-toast.addEventListener('click', () => {
-  showToast();
-}
-*/
-const footerButton = document.querySelector<HTMLButtonElement>('.js-button-text');
-const footerInputEmail = document.querySelector<HTMLInputElement>('.js-input-text');
-const emailUlElement = document.querySelector('.js-email-list');
-
-footerButton.addEventListener('click', () => {
-  const inputValue = footerInputEmail.value;
-  const newLiElement = document.createElement('li');
-  newLiElement.innerHTML = inputValue;
-
-  emailUlElement.appendChild(newLiElement);
+btnLeft.addEventListener('click', () => {
+  const isFirstSlide = slideCurrrentSlideIndex === 0;
+  slideCurrrentSlideIndex = isFirstSlide ? slideCount : slideCurrrentSlideIndex - 1;
+  toggleHiddenClasses();
 });
 
 /// TOAST OPEN & CLOSE ///
@@ -79,6 +47,20 @@ openToast.addEventListener('click', () => {
 
 closeToast.addEventListener('click', () => {
   toast.style.visibility = 'hidden';
+});
+
+/// CUSTOMER FORM ///
+
+const customerBtn = document.querySelector<HTMLButtonElement>('.js-customer-btn');
+const customerForm = document.querySelector('.js-customer-form');
+const sendForm = document.querySelector('.js-thought__btn');
+
+customerBtn.addEventListener('click', () => {
+  customerForm.classList.remove('hidden');
+});
+
+sendForm.addEventListener('click', () => {
+  customerForm.classList.add('hidden');
 });
 
 ///  FOOTER CHANGE BACKGROUND COLOR ///
@@ -110,4 +92,16 @@ const setNewColor = () => {
 
 footerInput.addEventListener('keypress', () => {
   setNewColor();
+});
+
+const footerButton = document.querySelector<HTMLButtonElement>('.js-button-text');
+const footerInputEmail = document.querySelector<HTMLInputElement>('.js-input-text');
+const emailUlElement = document.querySelector('.js-email-list');
+
+footerButton.addEventListener('click', () => {
+  const inputValue = footerInputEmail.value;
+  const newLiElement = document.createElement('li');
+  newLiElement.innerHTML = inputValue;
+
+  emailUlElement.appendChild(newLiElement);
 });

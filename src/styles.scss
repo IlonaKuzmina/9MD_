@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Poppins:wght@400;500;600;700&display=swap');
 @import 'components/resets.scss';
 @import 'components/grids.scss';
-@import 'components/header_hero.scss';
+@import 'components/header_hero_section.scss';
 @import 'components/toast.scss';
-@import 'components/tour__section.scss';
+@import 'components/tour_section.scss';
 @import 'components/globally_section.scss';
 @import 'components/video_section.scss';
 @import 'components/team_section.scss';
 @import 'components/choose_section.scss';
 @import 'components/customer_section.scss';
 @import 'components/news_section.scss';
-@import 'components/footer_container.scss';
+@import 'components/footer_section.scss';
 
 
 body {
@@ -115,23 +115,6 @@ background-color: var(--main-brown-color);
   color:var(--colored-text);
 }
 
-.pseido__button {
-  background-color: var(--main-brown-color);
-  border-radius: 80px;
-  color:white;
-  padding: 14px 40px;
-  max-width:334px;
-  display:flex;
-  align-items: center;
-  justify-content:center;
-}
-
-.pseido__button a{
-  text-decoration:none;
-  color:inherit;
-  margin:auto 0;
-}
-
 
 /* SCROLLBAR */
 ::-webkit-scrollbar {
@@ -149,6 +132,13 @@ background-color: var(--main-brown-color);
   box-shadow: 0 0 11px #0a252a;
 }
 
+@media screen and (max-width: 1100px) {
+  .tour__image__container, 
+  .tour__images--box, 
+  .tour__images--content {
+    flex-direction:column;
+  }
+  }
 
 @media screen and (max-width: 768px) {
   .container {
@@ -198,4 +188,5 @@ background-color: var(--main-brown-color);
   .article {
     margin:50px 10px;
   } 
+
 };

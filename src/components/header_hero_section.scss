@@ -13,6 +13,23 @@
     padding: 30px 20px 30px 0px;
 }
 
+.pseido__button {
+  background-color: #B25A59;
+  border-radius: 80px;
+  color:white;
+  padding: 14px 40px;
+  max-width:334px;
+  min-width: 330px;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.pseido__button a{
+  text-decoration:none;
+  color:inherit;
+  margin:auto 0;
+}
 
 .show__toast {
   background: #FBFBFB;
@@ -43,4 +60,21 @@
   flex-direction: row;
   align-items: center;
   column-gap: 15px;;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  justify-content: space-evenly;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: var(--main-brown-color);
+&:hover {
+  text-shadow: 0 1;
+  font-weight: bold;
+  text-decoration: underline;
+}
 }
