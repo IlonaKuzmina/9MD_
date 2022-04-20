@@ -1,92 +1,91 @@
 .customer__small__line {
-    width:90px;
-    display: inline-block;
+  width: 90px;
+  display: inline-block;
 }
 .customer__heading {
-    padding: 30px 0;
-    font-size: 60px;
-line-height: 82px;
+  padding: 30px 0;
+  font-size: 60px;
+  line-height: 82px;
 }
 
 .customer__paragraph {
-    padding-right: 40px;
+  padding-right: 40px;
 }
 
 .testimonial {
-    line-height: 27px;
-letter-spacing: 0.2em;
-padding-left:20px;
+  line-height: 27px;
+  letter-spacing: 0.2em;
+  padding-left: 20px;
 }
 
 .customer__image--box {
-    max-width:630px;
-    margin-top:30px;
+  max-width: 630px;
+  margin-top: 30px;
 }
 
 .customer__image {
-    border-radius: 20px;
-
+  border-radius: 20px;
 }
 
 .button__text {
-    padding: 0 60px;
+  padding: 0 60px;
 }
 
-.arrow__svg{
-    border: 1px solid #EE5060;
-    border-radius: 50%;
-    padding: 25px;
+.arrow__svg {
+  border: 1px solid #ee5060;
+  border-radius: 50%;
+  padding: 25px;
 }
 
 .round__button {
-    background-color: transparent;
-    border: 1px solid #EE5060;
-    color:#EE5060;
-    padding: 25px 0 25px 25px;
-    cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #ee5060;
+  color: #ee5060;
+  padding: 25px 0 25px 25px;
+  cursor: pointer;
 }
 
 .write__your__thought {
-    margin-top:30px;
+  margin-top: 30px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .input {
-    border:1px solid #EE5060;
-    background-color: rgb(241, 219, 219);
-    font-size: 16px;
-    line-height: 24px;
-    width: 100%;
-    padding: 12px 12px;
-    border: none;
-    border-radius: 5px;
-    color: white;
+  border: 1px solid #ee5060;
+  background-color: rgb(241, 219, 219);
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
 }
 
-  .thought__btn {
-    background-color: lightcoral;
-    border: 1px solid #EE5060;
-    color:white;
-    padding: 10px 30px;
-    transition: .8s;
-    cursor: pointer;
-    &:hover {
-        background-color: #EE5060;
-        border: 1px solid lightcoral;
-        transition: .8s;
-    }
+.thought__btn {
+  background-color: lightcoral;
+  border: 1px solid #ee5060;
+  color: white;
+  padding: 10px 30px;
+  transition: 0.8s;
+  cursor: pointer;
+  &:hover {
+    background-color: #ee5060;
+    border: 1px solid lightcoral;
+    transition: 0.8s;
+  }
 }
-  
+
 .trip__box {
-display:flex;
+  display: flex;
 }
 
 .trips__button {
-    background-color: #B25A59;
-    border-radius: 80px;
-    color:white;
-    padding: 12px 40px;
+  background-color: #b25a59;
+  border-radius: 80px;
+  color: white;
+  padding: 12px 40px;
 }

@@ -1,41 +1,41 @@
 .article {
-    background: white;
-box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
-border-radius: 20px;
-padding: 54px;
-margin:30px;
-min-width: 310px;
+  background: white;
+  box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: 20px;
+  padding: 54px;
+  margin: 30px;
+  min-width: 310px;
 }
 .article__heading {
-    padding-bottom: 60px;
-    padding-top: 60px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
-.article{
-    position: relative;
-    margin-top:100px;
-}   
+.article {
+  position: relative;
+  margin-top: 100px;
+}
 
 .star {
-       background: #EE5060;
+  background: #ee5060;
 }
 
 .globe {
-    background: #F0C53E;
+  background: #f0c53e;
 }
 
 .like {
-    background: #AF6C2C;
+  background: #af6c2c;
 }
 
 .choose__box {
-    box-shadow: 0px 10px 40px rgba(54, 61, 136, 0.06);
-    border-radius: 50%;
-    display: inline-block;
-    padding: 25px;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top:-50px;
-    right:40%;
-  }
+  box-shadow: 0px 10px 40px rgba(54, 61, 136, 0.06);
+  border-radius: 50%;
+  display: inline-block;
+  padding: 25px;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  right: 40%;
+}

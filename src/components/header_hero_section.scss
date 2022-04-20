@@ -1,38 +1,38 @@
 .header__phone {
-    display: flex;
-    }
+  display: flex;
+}
 
 .header__box {
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .hero__paragraph {
-    padding: 30px 20px 30px 0px;
+.hero__paragraph {
+  padding: 30px 20px 30px 0px;
 }
 
 .pseido__button {
-  background-color: #B25A59;
+  background-color: #b25a59;
   border-radius: 80px;
-  color:white;
+  color: white;
   padding: 14px 40px;
-  max-width:334px;
+  max-width: 334px;
   min-width: 330px;
-  display:flex;
+  display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
-.pseido__button a{
-  text-decoration:none;
-  color:inherit;
-  margin:auto 0;
+.pseido__button a {
+  text-decoration: none;
+  color: inherit;
+  margin: auto 0;
 }
 
 .show__toast {
-  background: #FBFBFB;
+  background: #fbfbfb;
   box-shadow: 0px 15px 44px rgba(13, 15, 28, 0.12);
   border-radius: 50%;
   display: inline-block;
@@ -41,40 +41,40 @@
   width: 60px;
   height: 60px;
   cursor: pointer;
-  border:none;
-  transition: .4s;
+  border: none;
+  transition: 0.4s;
   &:hover {
     background-color: hsl(0, 0%, 90%);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.50);
-    transition: .4s;
-}
-&:active {
-    background-color: #B25A59;
-    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.50);
-    transition: .4s;
-}
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+  }
+  &:active {
+    background-color: #b25a59;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+  }
 }
 
 .hero__button__line {
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 15px;;
+  column-gap: 15px;
 }
 
 .nav__list {
   display: flex;
   flex-direction: row;
-  width:100%;
+  width: 100%;
   justify-content: space-evenly;
 }
 
 .nav__item {
   text-decoration: none;
   color: var(--main-brown-color);
-&:hover {
-  text-shadow: 0 1;
-  font-weight: bold;
-  text-decoration: underline;
-}
+  &:hover {
+    text-shadow: 0 1;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }

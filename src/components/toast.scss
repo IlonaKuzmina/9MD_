@@ -1,36 +1,35 @@
 .toast {
-    max-width: 474px;
-    padding: 16px 24px;
-    border: 1px solid #F1F1F1;
-    border-radius: 4px;
-    position: fixed;
-    z-index: 2;
-    top:10px;
-    right:10px;
-    background-color: var(--main-brown-color);
-    color:white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    visibility: hidden;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.80);
-    transition: .4s;
+  max-width: 474px;
+  padding: 16px 24px;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  position: fixed;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  background-color: var(--main-brown-color);
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  visibility: hidden;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
 }
 
 .active-more {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .toast__close {
-    position:absolute;
-    top:15px;
-    right:15px;
-    cursor: pointer;
-    &:hover {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  &:hover {
     color: var(--main-yellow-color);
+  }
 }
-}   
 
 .toast__close svg {
-    fill:currentColor;
+  fill: currentColor;
 }
-
